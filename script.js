@@ -105,8 +105,10 @@ scoreDisplay.textContent = score;
         firstClick = false;
         secondCard = event.target;
         secondCard.style.backgroundColor = target.className;
+
         let card1stBg = firstCard.style.backgroundColor;
         let card2ndBg = secondCard.style.backgroundColor;
+        
         if(card1stBg === card2ndBg && firstCard !== secondCard) {
           updateScore();
           isMatch = true;
